@@ -1,0 +1,161 @@
+@charset "utf-8"; @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,500,700&display=swap'); 
+body { font-family:'Noto Sans KR',sans-serif; color:#2b2b2b;  } 
+
+ p, h1, h2 { position: relative; z-index: 2; } 
+
+
+/* header */
+header { position:fixed; top:0; left:0; bottom:0; width:100%; height:60px; z-index:100; background-color:rgba(255,255,255,0.5); } 
+header>.container>nav { position:absolute; left:50%; top:0; margin-left:-650px; width:100%; height:60px; } 
+header>.container>nav>.gnb>li { float:left; width:200px; } 
+header>.container>nav>.gnb>li>a { display:block; height:60px; line-height:60px; font-size:20px; font-weight:700; text-align:center; transition:all 0.4s; } 
+header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,header>.container>nav>.gnb>li.on>a { color:#ffffff; }
+
+
+
+/* 1.retroric */
+#Overview { width:100%; height: 1000px; background-image:url(../images/background1.gif); background-repeat:no-repeat; background-size:cover; margin: 0 auto;} 
+#Overview>.title { width:100%; padding-left: 10%; padding-top: 20%; color: #fff;}
+#Overview>.title>p { font-weight:700; font-size: clamp(2.5rem, 3vw, 3rem); color:#ffffff;}
+#Overview>.title>li {padding-top: 10px;line-height: 180%}
+
+
+
+/* 2. rx-01,02 */
+#RX {width: 100%; height: 700px; background-image:url(../images/Retroric2.jpg); background-repeat:no-repeat; background-size:auto; margin: 0 auto;background-position: center center}
+#RX>div {text-align: center; padding-top: 5%; font-size: 1.3rem; }
+
+/* 3. rvt01 */
+#Business {width: 100%; height: 720px; background-image:url(../images/Retroric3.jpg); background-repeat:no-repeat; background-size:auto; margin: 0 auto;background-position: center center}
+#Business>div { color: #fff; width:100%; padding-left: 10%; padding-top: 13%;}
+#Business>div>ul>p {font-weight:700; font-size: clamp(2.5rem, 3vw, 3rem); letter-spacing:1px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);} 
+#Business>div>ul>li {text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); padding-top: 1%; line-height: 180%;}
+#Business>div>.business-container {display: flex; gap: 25px; padding-top: 3%;}
+#Business>div>.business-container>.business-box {width: 400px; height: 300px; border-radius: 10px; display: flex; justify-content: center; align-items: center;
+background-color: rgba(0, 0, 0, 0.5);}
+
+
+/* 4. TV보호기 */
+#TV { width: 100%; height: 700px; background-image:url(../images/Retroric4.jpg); background-repeat:no-repeat; background-size:auto; margin: 0 auto;}
+#TV>.title {padding: 15% 10% 10% 10%; color: #4d4d4d}
+#TV>.title>ul>p { font-size: clamp(2.5rem, 3vw, 3rem); font-weight:700; color:#7576a0; letter-spacing:1px;}
+#TV>.title>ul>li:first-of-type { font-size:1.2em; color:#7576a0; font-weight: 700;padding-bottom: 1%;}
+
+/* 5. Retroric */
+#Retroric {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* 배경 비디오 */
+#Retroric video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+}
+
+#Retroric::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 블랙 30% */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 내용 영역 */
+#Retroric .content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  /* 왼쪽 정렬 */
+  padding-left: 10%;
+  color: #fff;
+  text-align: left;             /* 텍스트 왼쪽 정렬 */
+}
+
+/* 텍스트 & 이미지 타이틀 */
+#Retroric .title ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Retroric .title ul p {
+  font-size: clamp(2.5rem, 3vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+#Retroric .title ul li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  padding-top: 0.5%;
+}
+
+
+
+/* 6. 경영이념 */
+#PR-Room { width: 100%; height: 700px; background-color: #292929;}
+#PR-Room>.title {padding: 10%; color: #fff;}
+#PR-Room>.title>ul>p { font-size: clamp(2rem, 2vw, 2rem); font-weight:700; color:#7576a0; letter-spacing:1px; }
+#PR-Room>.title>ul>li { padding-top: 1%;}
+#PR-Room>.title>.circle-wrapper{display: flex; justify-content: center; align-items: center; }
+#PR-Room>.title>.circle-wrapper>.circle-container{display: flex; gap: 40px; padding-top: 5%;}
+#PR-Room>.title>.circle-wrapper>.circle-container>.circle{width: 220px; height: 220px; border: 1px solid rgb(114, 114, 114); border-radius: 50%;
+    display: flex; justify-content: center; align-items: center; text-align: center; font-size: 18px; font-weight: bold;}
+
+
+
+/* 7. Contact-Us */
+#Contact-Us { width: 100%; height: 700px; display: flex; justify-content: center; align-items: center;}
+#Contact-Us>.title {color: #000; padding: 0 10% 15% 0;}
+#Contact-Us>.title>ul>p { font-size: clamp(2.5rem, 3vw, 3rem); font-weight:500; color:#7576a0; letter-spacing:1px; } 
+
+
+/* footer */
+footer { width:100%; height:160px; background-color:#7576a0; padding: 3% 0 0 5%;} 
+footer>address { font-size:14px; font-weight:300; color:#fff; line-height:1.6; text-align:left; } 
+
+
+#Retroric {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+#Retroric video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+#Retroric .content {
+  position: relative;
+  z-index: 1;
+  /* 여기에 텍스트나 버튼 같은 내용 스타일을 추가 */
+}
+
