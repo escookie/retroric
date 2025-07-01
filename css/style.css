@@ -43,15 +43,16 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #RVT01::before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0); transition: background-color 0.3s ease; z-index: 1;}
 #RVT01:hover::before {background-color: rgba(0, 0, 0, 0.15);}
 #RVT01>div { position: absolute; top: 50%; left: 10%; transform: translate(0%, -50%); z-index: 2; width:30%; color: #fff}
-#RVT01>div>ul>p {font-size: 2.8em; font-weight:700; letter-spacing:1px} 
+#RVT01>div>ul>p {font-size: 2.8em; font-weight:700; letter-spacing:1px; color: #7576a0;} 
 #RVT01>div>ul>li {padding-top: 0.5%; font-size: 1.1em; line-height: 1.6;}
 
 
 /* 4. TV보호기 */
-#TV { width: 100%; height: 700px; background-image:url(../images/Retroric4.jpg); background-repeat:no-repeat; background-size:auto; margin: 0 auto;}
-#TV>.title {padding: 15% 10% 10% 10%; color: #4d4d4d}
-#TV>.title>ul>p { font-size: clamp(2.5rem, 3vw, 3rem); font-weight:700; color:#7576a0; letter-spacing:1px;}
-#TV>.title>ul>li:first-of-type { font-size:1.2em; color:#7576a0; font-weight: 700;padding-bottom: 1%;}
+#TV { width: 100%; height: 700px; display: flex; background-color: #f8fcff;}
+#TV>.title {padding: 15% 0 10% 10%; color: #4d4d4d}
+#TV>.title>ul>li:first-child { font-size: clamp(2.5rem, 3vw, 3rem); font-weight:700; color:#7576a0; letter-spacing:1px;}
+#TV>.title>ul>li:nth-child(2) { font-size:1.2em; color:#7576a0; font-weight: 700;padding-bottom: 1%; padding-top: 1%;}
+#TV>.title>ul>li:nth-child(2) a:hover { color:#7576a0; text-decoration: underline; transition: color 0.1s;}#TV>.title>ul>li:nth-child(3) {padding-top: 0.5%; font-size: 1.1em; line-height: 1.6;}
 
 /* 5. Retroric */
 #Retroric {
