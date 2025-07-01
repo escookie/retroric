@@ -27,9 +27,11 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #RX>div:nth-child(2) {display: flex; justify-content: center; align-items: center; padding-top: 2%;}
 
 /* 3. RVT01 */
-#RVT01 {width: 100%; height: 720px; background-image:url(../images/Retroric3.jpg); background-repeat:no-repeat; background-size:auto; margin: 0 auto;background-position: center center}
-#RVT01>div { color: #fff; width:30%; padding-left: 10%; padding-top: 13%;}
-#RVT01>div>ul>p {font-weight:700; font-size: 2.8em; letter-spacing:1px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);} 
+#RVT01 {position: relative; width: 100%; height: 720px; background-image:url(../images/Retroric3.jpg); background-repeat:no-repeat; background-size:auto; margin: 0 auto;background-position: center center}
+#RVT01::before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0); transition: background-color 0.3s ease; z-index: 1;}
+#RVT01:hover::before {background-color: rgba(0, 0, 0, 0.15);}
+#RVT01>div { position: relative; z-index: 2; color: #fff; width:30%; padding-left: 10%; padding-top: 13%;}
+#RVT01>div>ul>p {font-size: 2.8em; font-weight:700; letter-spacing:1px} 
 #RVT01>div>ul>li {padding-top: 0.5%; line-height: 180%;}
 
 
