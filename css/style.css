@@ -21,18 +21,17 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 
-/* 2. rx-01,02 */
-#RX {width: 100%; height: 700px; background-image:url(../images/Retroric2.jpg); background-repeat:no-repeat; background-size:auto; margin: 0 auto;background-position: center center}
-#RX>div {text-align: center; padding-top: 5%; font-size: 1.3rem; }
+/* 2. RX-01,02 */
+#RX {width: 100%; height: 700px; background-color: #eeeced;}
+#RX>div:first-child {text-align: center; padding-top: 5%; font-size: 1.3rem; font-weight: 700;}
+#RX>div:nth-child(2) {display: flex; justify-content: center; align-items: center; padding-top: 2%;}
 
-/* 3. rvt01 */
-#Business {width: 100%; height: 720px; background-image:url(../images/Retroric3.jpg); background-repeat:no-repeat; background-size:auto; margin: 0 auto;background-position: center center}
-#Business>div { color: #fff; width:100%; padding-left: 10%; padding-top: 13%;}
-#Business>div>ul>p {font-weight:700; font-size: clamp(2.5rem, 3vw, 3rem); letter-spacing:1px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);} 
-#Business>div>ul>li {text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); padding-top: 1%; line-height: 180%;}
-#Business>div>.business-container {display: flex; gap: 25px; padding-top: 3%;}
-#Business>div>.business-container>.business-box {width: 400px; height: 300px; border-radius: 10px; display: flex; justify-content: center; align-items: center;
-background-color: rgba(0, 0, 0, 0.5);}
+/* 3. RVT01 */
+#RVT01 {width: 100%; height: 720px; background-image:url(../images/Retroric3.jpg); background-repeat:no-repeat; background-size:auto; margin: 0 auto;background-position: center center}
+#RVT01>div { color: #fff; width:30%; padding-left: 10%; padding-top: 13%;}
+#RVT01>div>ul>p {font-weight:700; font-size: 2.8em; letter-spacing:1px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);} 
+#RVT01>div>ul>li {padding-top: 0.5%; line-height: 180%;}
+
 
 
 /* 4. TV보호기 */
