@@ -26,6 +26,16 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #RX>div:first-child {text-align: center; padding-top: 5%; font-size: 1.3rem; font-weight: 700;}
 #RX>div:nth-child(2) {display: flex; justify-content: center; align-items: center; padding-top: 2%;}
 
+.img-wrap { display: flex; gap: 0%; }
+
+.img-hover { display: block; width: 672px; height: 472px; background-size: cover; background-position: center; transition: background-image 0.2s ease; }
+
+.img1 { background-image: url('../images/rx1.jpg'); }
+.img2 { background-image: url('../images/rx2.jpg'); }
+
+.img1:hover { background-image: url('../images/rx1on.jpg'); }
+.img2:hover { background-image: url('../images/rx2on.jpg'); }
+
 /* 3. RVT01 */
 #RVT01 {position: relative; width: 100%; height: 720px; background-image:url(../images/Retroric3.jpg); background-repeat:no-repeat; background-size:auto; margin: 0 auto;background-position: center center}
 #RVT01::before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0); transition: background-color 0.3s ease; z-index: 1;}
