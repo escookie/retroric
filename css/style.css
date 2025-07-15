@@ -79,23 +79,55 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 /* 4. TV */
 #TV {position: relative; min-height: 100vh; display: flex; flex-wrap: wrap; align-items: center; background-color: #f8fcff;}
 #TV>.title {position: relative; left: 10%; color: #4d4d4d; flex:1 1 400px}
-@media screen and (max-width: 768px) {
-  #TV>.title { padding-top: 25%; }
-  
-}
 #TV img {flex: 1 1 400px;}
 #TV>.title>ul>li:first-child { font-size: clamp(2.5rem, 3vw, 3rem); font-weight:700; color:#7576a0; letter-spacing:1px;}
 #TV>.title>ul>li:nth-child(2) { font-size:1.2em; color:#7576a0; font-weight: 700;padding-bottom: 1%; padding-top: 1%;}
 #TV>.title>ul>li:nth-child(2) a:hover { color:#7576a0; text-decoration: underline; transition: color 0.1s;}
 #TV>.title>ul>li:nth-child(3) {padding-top: 0.5%; font-size: 1.1em; line-height: 1.6;width: 90%;}
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {  
+  @media (max-width: 768px) {
+  #TV {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #TV>.title {
+    padding-top: 25%;
+    align-items: center;
+    left: 0; /* ← 여기 추가! */
+    margin: 0 auto;
+  }
+
+  #TV>.title>ul {
+    align-items: center;
+    justify-content: center;
+  }
+
   #TV>.title>ul>li:nth-child(2) {
     display: flex;
     flex-wrap: wrap;  
     gap: 5px;
+    justify-content: center;
   }
-  #TV>.title>ul>li:nth-child(3) {width: 80%;}
+
+  #TV>.title>ul>li:nth-child(3) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #TV .pt-5 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #TV img {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+}
+
 }
 
 
