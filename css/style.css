@@ -24,6 +24,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #Retroric .content{position:relative;z-index:1;height:100%;display:flex;align-items:center;justify-content:flex-start;padding-left:10%;color:#fff;text-align:left}
 #Retroric .content > ul > li:nth-child(2) {font-size: 1.2em; width: 60%;}
 @media screen and (max-width: 768px) {
+  #Retroric .content {padding-left: 0;}
   #Retroric .content > ul > li:nth-child(1) {text-align: center;}
   #Retroric .content > ul > li:nth-child(2) { width: 90%; text-align: center;}
   
