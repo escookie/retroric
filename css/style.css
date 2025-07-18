@@ -149,7 +149,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 }
 
 /* footer */
-footer { height:160px; background-color:#7576a0; padding: 3% 0 0 5%;} 
+footer { height:200px; background-color:#7576a0; padding: 3% 0 0 5%;} 
 footer>address { font-size:14px; font-weight:300; color:#fff; line-height:1.6; text-align:left; } 
 
 
