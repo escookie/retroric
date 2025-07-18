@@ -37,7 +37,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
   #RX>div:first-child { padding: 0 10%; word-break: keep-all;}
   
 }
-#RX>div:not(:first-child){display:block;}
+#RX>div:not(:first-child){display:inline-block;}
 
 .btn_black {background-color: #000000; color: #ffffff !important; font-size: 1.2em; font-weight: 700; border-radius: 25px; padding: 10px 25px; text-decoration: none;  transition: background-color 0.1s ease, color 0.1s ease;}
 .btn_black:hover {color: #ffffff; background-color: #7576a0; text-decoration: none;}
