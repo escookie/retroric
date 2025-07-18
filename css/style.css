@@ -31,13 +31,13 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 }
 
 /* 2. RX-01,02 */
-#RX {min-height: 100vh; background-color: #eeeced; text-align: center;}
+#RX {min-height: 100vh; background-color: #eeeced; text-align: center; padding: 25% 0;}
 #RX>div:first-child{font-size:1.8rem;font-weight:700;margin-bottom:40px;color:#111;padding-top:5%}
 @media screen and (max-width: 768px) { 
-  #RX>div:first-child { padding: 25% 15% 0 15%; word-break: keep-all;}
+  #RX>div:first-child { padding: 0 10%; word-break: keep-all;}
   
 }
-#RX>div:not(:first-child){display:inline-block;margin:20px}
+#RX>div:not(:first-child){display:block;}
 
 .btn_black {background-color: #000000; color: #ffffff !important; font-size: 1.2em; font-weight: 700; border-radius: 25px; padding: 10px 25px; text-decoration: none;  transition: background-color 0.1s ease, color 0.1s ease;}
 .btn_black:hover {color: #ffffff; background-color: #7576a0; text-decoration: none;}
