@@ -77,13 +77,17 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 /* 4. TV */
 #TV {position: relative; min-height: 100vh; display: flex; flex-wrap: wrap; align-items: center; background-color: #f8fcff;}
 #TV>.title {position: relative; left: 10%; color: #4d4d4d; flex:1 1 400px}
+@media screen and (max-width: 768px) {#TV>.title {left: 0; margin: 0 auto; width: 100%; padding-top: 25%;}}
+
+
 #TV img {flex: 1 1 400px;}
 #TV>.title>ul>li:first-child { font-size: clamp(2.5rem, 3vw, 3rem); font-weight:700; color:#7576a0; letter-spacing:1px;}
-#TV>.title>ul>li:nth-child(2) { font-size:1.4em; color:#7576a0; font-weight: 700; padding:1% 0;}
+#TV>.title>ul>li:nth-child(2) { font-size:1.4em; line-height: 1.2; color:#7576a0; font-weight: 700; padding:3% 0;}
 @media screen and (max-width: 768px) {#TV>.title>ul>li:nth-child(2){padding:1% 5%;}}
 
 #TV>.title>ul>li:nth-child(2) a:hover { color:#7576a0; text-decoration: underline; transition: color 0.1s;}
 #TV>.title>ul>li:nth-child(3) {padding-top: 0.5%; font-size: 1.1em; line-height: 1.6;width: 90%;}
+@media screen and (max-width: 768px) {#TV>.title>ul>li:nth-child(3){width: 100%; padding-top: 5%;}}
 
 
 @media (max-width: 768px) {
