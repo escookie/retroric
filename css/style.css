@@ -138,7 +138,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
   #monitor>.title {align-items: center;left: 0; margin: 0 auto;width: 90%}
   #monitor>.title>ul {align-items: center;justify-content: center; padding: 0;}
   #monitor>.title>ul>div:first-child {padding: 0 5%;}
-  #monitor>.title>ul>div:nth-child(2) {display: flex;flex-wrap: wrap;gap: 5px;justify-content: center;padding:5% 5% 1% 5%;}
+  #monitor>.title>ul>div:nth-child(2) {display: flex;flex-wrap: wrap;gap: 5px;justify-content: center;padding:5% 10%}
   #monitor>.title>ul>div:nth-child(3) {margin: 0 auto; padding-top: 5%;}    
 
   #monitor .pt-5 {display: flex;justify-content: center;}
