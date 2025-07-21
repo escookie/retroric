@@ -94,6 +94,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 @media (max-width: 768px) {
   #TV {flex-direction:column}
   #TV .title{padding-top:15%; padding-left: 0; max-width:80%;}
+  #TV .title .size-links{padding: 0 5%;}
   #TV .title .description{padding-top:5%; margin: 0 auto;max-width: 100%;}  
   #TV .image-wrapper{margin-top:2rem}
   .headline, 
