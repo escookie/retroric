@@ -76,10 +76,9 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 /* 4. TV */
-#TV{position:relative;min-height:100vh;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;background-color:#f8fcff;text-align:center;padding:5% 2%}
+#TV {position:relative;min-height:100vh;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;background-color:#f8fcff;text-align:center;padding:5% 2%}
 #TV .title{flex:1 1 40%;max-width:60%;margin:0 auto; padding-left: 10%;}
 #TV .title ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1rem}
-
 #TV .title .headline{font-size:clamp(2.5rem, 3vw, 3rem);font-weight:700;color:#7576a0;letter-spacing:1px}
 #TV .title .size-links{font-size:1.4em;font-weight:700;color:#7576a0;}
 #TV .title .size-links a:hover{color:#7576a0;text-decoration:underline;transition:color .1s}
@@ -93,11 +92,13 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 .description {text-align: left;}
 
 @media (max-width: 768px) {
-  #TV{flex-direction:column}
-  #TV .title{padding-top:10%; padding-left: 0; max-width:80%;}
-  #TV .title .description{padding-top:5%; margin: 0 auto;max-width: 100%;}
-  #TV .title .headline {text-align: center !important;}
-  #TV .image-wrapper{margin-top:2rem}  
+  #TV {flex-direction:column}
+  #TV .title{padding-top:15%; padding-left: 0; max-width:80%;}
+  #TV .title .description{padding-top:5%; margin: 0 auto;max-width: 100%;}  
+  #TV .image-wrapper{margin-top:2rem}
+  .headline, 
+  .size-links, 
+  .description {text-align: center !important;}
 }
 
 
