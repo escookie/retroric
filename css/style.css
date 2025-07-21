@@ -26,8 +26,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 @media screen and (max-width: 768px) {
   #Retroric .content {padding-left: 0;}
   #Retroric .content > ul > li:nth-child(1) {text-align: center;}
-  #Retroric .content > ul > li:nth-child(2) { width: 90%; text-align: center;}
-  
+  #Retroric .content > ul > li:nth-child(2) { width: 90%; text-align: center;}  
 }
 
 /* 2. RX-01,02 */
@@ -81,7 +80,6 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #TV .title{flex:1 1 40%;max-width:60%;margin:0 auto; padding-left: 10%;}
 #TV .title ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1rem}
 
-
 #TV .title .headline{font-size:clamp(2.5rem, 3vw, 3rem);font-weight:700;color:#7576a0;letter-spacing:1px}
 #TV .title .size-links{font-size:1.4em;font-weight:700;color:#7576a0;}
 #TV .title .size-links a:hover{color:#7576a0;text-decoration:underline;transition:color .1s}
@@ -130,22 +128,19 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #monitor img {flex: 1 1 400px;}
 #monitor>.title {position: relative; color: #4d4d4d; flex:1 1 400px}
 #monitor>.title>ul {padding-right: 10%;}
-@media screen and (max-width: 768px) {#monitor>.title>ul {padding-right: 0;}}
-  
 #monitor>.title>ul>div:first-child { font-size: clamp(2.3rem, 2.8vw, 2.7rem); font-weight:700; color:#7576a0; letter-spacing:1px; word-break: keep-all;}
-@media screen and (max-width: 768px) {#monitor>.title>ul>div:first-child {padding: 0 5%;}}
-
 #monitor>.title>ul>div:nth-child(2) { font-size:1.4em; color:#7576a0; font-weight: 700; padding:5% 0 1% 0;}
-@media screen and (max-width: 768px) {#monitor>.title>ul>div:nth-child(2){padding:5% 5% 1% 5%;}}
-
 #monitor>.title>ul>div:nth-child(2) a:hover { color:#7576a0; text-decoration: underline; transition: color 0.1s;}
 #monitor>.title>ul>div:nth-child(3) {padding-top: 0.5%; font-size: 1.1em; line-height: 1.6;width: 90%;}
+
 @media (max-width: 768px) {
-  #monitor {flex-direction: column;justify-content: center;text-align: center; padding-bottom: 10%;}
+  #monitor {flex-direction: column;justify-content: center;text-align: center; padding-bottom: 30%;}
   #monitor>.title {align-items: center;left: 0; margin: 0 auto;width: 90%}
-  #monitor>.title>ul {align-items: center;justify-content: center;}
-  #monitor>.title>ul>div:nth-child(2) {display: flex;flex-wrap: wrap;gap: 5px;justify-content: center;}
-  #monitor>.title>ul>div:nth-child(3) {margin: 0 auto; padding-top: 5%;}
+  #monitor>.title>ul {align-items: center;justify-content: center; padding: 0;}
+  #monitor>.title>ul>div:first-child {padding: 0 5%;}
+  #monitor>.title>ul>div:nth-child(2) {display: flex;flex-wrap: wrap;gap: 5px;justify-content: center;padding:5% 5% 1% 5%;}
+  #monitor>.title>ul>div:nth-child(3) {margin: 0 auto; padding-top: 5%;}    
+
   #monitor .pt-5 {display: flex;justify-content: center;}
   #monitor img {max-width: 90%;margin: 20px auto; padding-top: 15%;}
 }
