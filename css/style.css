@@ -68,7 +68,9 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #RVT01>div>ul>li {padding-top: 0.5%; font-size: 1.1em; line-height: 1.6;}
 
 @media screen and (max-width: 768px) {
-  #RVT01>div { max-width: 90%; }
+  #RVT01 {padding: 5% 0;}
+  #RVT01>div { max-width: 100%; }
+  #RVT01>div>ul {padding: 0 5%;}  
   #RVT01::before { background-color: rgba(0, 0, 0, 0.5); }
 }
 
@@ -151,6 +153,10 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 /* footer */
 footer { height:200px; background-color:#7576a0; padding: 3% 0 0 5%;} 
 footer>address { font-size:14px; font-weight:300; color:#fff; line-height:1.6; text-align:left; } 
+@media screen and (max-width: 768px) {
+  footer { height: auto; padding: 10% 8%; }
+  footer>address { font-size: 12px; }
+}
 
 
 /* 전역 */
