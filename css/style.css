@@ -33,28 +33,32 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #RX {min-height: 100vh; background-color: #eeeced; text-align: center;display: flex;justify-content: center;align-items: center; flex-direction: row;}
 #RX>div {align-items: center; justify-content: center;}
 #RX>div>div:first-child{font-size:1.8rem; line-height:1.2 ;font-weight:700;margin-bottom:40px;color:#111}
-@media screen and (max-width: 768px) { 
-  #RX{min-height: 80vh; padding-bottom: 5%;}
-  #RX>div>div:first-child { padding: 0 10%; word-break: keep-all;}
-}
 #RX>div>div:not(:first-child){display:inline-block;}
 
 .btn_black {background-color: #000000; color: #ffffff !important; font-size: 1.2em; font-weight: 700; border-radius: 25px; padding: 10px 25px; text-decoration: none;  transition: background-color 0.1s ease, color 0.1s ease;}
 .btn_black:hover {color: #ffffff; background-color: #7576a0; text-decoration: none;}
 
-.img-wrap { display: flex; gap: 0%; }
+.img-wrap { display: flex;flex-direction: row;justify-content: center;align-items: center;gap: 20px;margin-bottom: 40px; }
 .img-hover { display: block; width: 640px; height: 472px; background-size: cover; background-position: center; transition: background-image 0.2s ease; }
-@media screen and (max-width: 768px) {.img-hover { width: 100%; height: 300px; }}
 
 .img1 { background-image: url('../images/rx1.jpg'); }
 .img2 { background-image: url('../images/rx2.jpg'); }
 .img1:hover { background-image: url('../images/rx1on.jpg'); }
 .img2:hover { background-image: url('../images/rx2on.jpg'); }
+
 @media screen and (max-width: 768px) {
-  .img1 {background-image: url('../images/rx1_mobile.jpg');}
-  .img2 {background-image: url('../images/rx2_mobile.jpg');}
-  .img1:hover {background-image: url('../images/rx1_mobile_on.jpg');}
-  .img2:hover {background-image: url('../images/rx2_mobile_on.jpg');}
+  #RX{min-height: 80vh; padding: 25% 0;}
+  #RX>div>div:not(:first-child){display:block;}  
+  #RX>div>div:first-child { padding: 0 10%; word-break: keep-all;}
+
+  .img-hover { width: 100%; height: 300px; }
+  .img1 {background-image: url('../images/rx1_mobile_inline_ver.jpg');}
+  .img2 {background-image: url('../images/rx2_mobile_inline_ver.jpg');}
+  .img1:hover {background-image: url('../images/rx1_mobile_inline_ver_on.jpg');}
+  .img2:hover {background-image: url('../images/rx2_mobile_inline_ver_on.jpg');}
+
+  .img-wrap {flex-direction: column; gap: 10px;}  
+  .img-hover { width: 100%; height: 300px; }
 }
 
 
