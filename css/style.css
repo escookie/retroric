@@ -48,8 +48,8 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 @media screen and (max-width: 768px) {
   #RX{min-height: 80vh; padding: 25% 0;}
-  #RX>div>div:not(:first-child){display:block;}  
-  #RX>div>div:first-child { padding: 0 10%; word-break: keep-all;}
+  #RX>div>div:first-child { padding: 0 10%; word-break: keep-all;margin-bottom:0}
+  #RX>div>div:not(:first-child){display:block;}
 
   .img-hover { width: 100%; height: 300px; }
   .img1 {background-image: url('../images/rx1_mobile_inline_ver.jpg');}
