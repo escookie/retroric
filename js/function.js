@@ -36,7 +36,7 @@ $(function(){
 
     $mobile_menu.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
     $('html,body').stop().animate({
-      scrollTop : arrTopVal[nowIdx]
+      scrollTop : arrTopVal[nowIdx]+270
     },500,'easeInOutCubic');
   });  
 
